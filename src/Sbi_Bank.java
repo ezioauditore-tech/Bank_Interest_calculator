@@ -4,7 +4,7 @@ public class Sbi_Bank extends Interest_calc{
     static float r;
     static float cal(int pr,float t,int type_loan){
         if(type_loan==1){
-            if(t<30){
+            if(t<=30){
                 r=7;
                 interest =  ((pr* r * t) / 100);
             }
@@ -14,7 +14,7 @@ public class Sbi_Bank extends Interest_calc{
             }
         }
         else if(type_loan==2){
-            if(t<7){
+            if(t<=7){
                 r=9;
                 interest =  ((pr* r * t) / 100);
             }
@@ -24,7 +24,7 @@ public class Sbi_Bank extends Interest_calc{
             }
         }
         else if(type_loan==4){
-            if(t<5){
+            if(t<=5){
                 r=11;
                 interest =  ((pr* r * t) / 100);
             }
